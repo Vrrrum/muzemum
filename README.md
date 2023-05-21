@@ -1,2 +1,2 @@
-# muzemum
+# muzeum
 museum SPA site demo
