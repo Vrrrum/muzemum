@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap");
+
+:root {
+  --primary: #fbaa0d;
+  --secondary: #292a2f;
+}
+
+h1 {
+  text-shadow: 5px 6px 0px var(--primary);
+  font-size: 36pt;
+  margin: 10% 5px;
+}
+h2 {
+  color: var(--secondary);
+  font-size: 40px;
+  text-align: center;
+}
+p {
+  margin: 10px;
+  font-weight: 700;
+}
+a:link {
+  color: var(--primary);
+}
+a:visited {
+  color: #797979;
+}
+a:hover {
+  color: #f4f1f1;
+}
+
+body {
+  margin: 0;
+
+  font-size: 24px;
+  font-family: "Inter";
+  color: #f4f1f1;
+  background-color: var(--primary);
+}
+section {
+  margin-top: 64px;
+}
+
+header {
+  height: 100vh;
+
+  background-color: var(--secondary);
+}
+nav {
+  height: 15%;
+  /* border: 2px solid red; */
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.logo {
+  background-image: url("img/thisman.jpg");
+  background-size: cover;
+  background-position: 0 -10px;
+
+  aspect-ratio: 1/1;
+  height: 100%;
+  border-radius: 50%;
+}
+.menu-mobile {
+  background-image: url("img/menu.svg");
+  background-size: cover;
+
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+
+header > div {
+  color: var(--primary);
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+.arrow {
+  background-image: url("img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+}
+
+.events {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.events > div {
+  background-image: url("img/event.png");
+  background-size: cover;
+  margin: 10px auto;
+
+  width: 80%;
+  height: 300px;
+
+  display: flex;
+  align-items: end;
+}
+.events > div > div {
+  text-align: center;
+  height: 30%;
+  width: 100%;
+
+  padding: 20px;
+
+  background-color: var(--secondary);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 90%;
+}
+.gallery > img {
+  display: block;
+  width: 100vw;
+}
+
+.contact-bg {
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 20px 0 20px 0;
+  box-shadow: inset 0px 4px 8px 9px rgba(0, 0, 0, 0.25);
+}
+
+.spacer {
+  height: 30px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 30px 0;
+  box-shadow: inset 2px 8px 4px rgba(0, 0, 0, 0.25);
+}
